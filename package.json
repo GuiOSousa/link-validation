@@ -28,5 +28,8 @@
   "bin": {
     "<link-validation>": "./src/cli.js"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
