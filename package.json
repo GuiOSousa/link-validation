@@ -2,11 +2,11 @@
   "name": "link-validation",
   "version": "1.0.3",
   "description": "Extract links from text files and checks the link status",
-  "main": "./cli.js",
+  "main": "src/cli.js",
   "type": "module",
   "scripts": {
     "test": "jest ./test",
-    "cli": "node ./src/cli.js"
+    "cli": "node src/cli.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "node-fetch": "^2.6.1"
   },
   "bin": {
-    "link-validation": "./cli.js"
+    "link-validation": "src/cli.js"
   },
   "preferGlobal": true,
   "devDependencies": {
