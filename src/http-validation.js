@@ -10,7 +10,7 @@ function errorTreatment(error){
 }
 
 function extractLinks(links){
-    if (links === "No links found." ) {return null}
+    if (links === "No links found." ) {return links}
     return links.map((objLink) => Object.values(objLink).join())
 }
 
@@ -29,7 +29,7 @@ async function checkURL(links){
 
 export default async function validate(links){
     const validatedLinks = extractLinks(links)
-    if (!validatedLinks) {return null}
+    if (validatedLinks === "No links found.") {return validatedLinks}
     const status = await checkURL(validatedLinks)
     const objectLink = validatedLinks.map((objLink, index) => ({link: objLink, status: status[index]}))
     return(objectLink)
