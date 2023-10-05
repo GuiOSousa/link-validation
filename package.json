@@ -1,0 +1,36 @@
+{
+  "name": "link-validation",
+  "version": "1.0.4",
+  "description": "Extract links from text files and checks the link status",
+  "main": "src/cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest ./test",
+    "cli": "node src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuiOSousa/link-validation"
+  },
+  "keywords": [
+    "URL",
+    "link"
+  ],
+  "author": "Guilherme Sousa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuiOSousa"
+  },
+  "homepage": "https://github.com/GuiOSousa",
+  "dependencies": {
+    "chalk": "5.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "bin": {
+    "link-validation": "src/cli.js"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
